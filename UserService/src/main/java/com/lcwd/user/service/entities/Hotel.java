@@ -1,5 +1,7 @@
 package com.lcwd.user.service.entities;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,16 +11,13 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Rating {
-    private String ratingId;
+public class Hotel {
+    private String id;
 
-    private String userId;
+    private String name;
 
-    private String hotelId;
+    private String location;
 
-    private int rating;
+    private String about;
 
-    private String feedback;
-
-    private Hotel hotel;
 }
